@@ -8,6 +8,6 @@
 
 require 'faker'
 
-10.times do |index|
-	comment = Comment.create!(content: Faker::BojackHorseman.quote, user_id: 8, article_id: 8)
+14.times do |index|
+	like = Like.create!(user_id: rand(1...9), article_id: rand(1...9))
 end
