@@ -9,5 +9,11 @@
 require 'faker'
 
 10.times do |index|
-	article = Article.create!(user_id: 2, title: Faker::StarWars.specie, content: Faker::StarWars.quote)
+	category = Category.create!(name: Faker::Cannabis.category)
+end
+
+articles = Article.all[4..10]
+articles.each do |element|
+	element.category_id = 5
+	element.save
 end
