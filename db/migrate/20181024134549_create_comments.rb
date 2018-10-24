@@ -1,3 +1,4 @@
+#This file is a migration and create a table for comments.
 class CreateComments < ActiveRecord::Migration[5.2]
   def change
     create_table :comments do |t|
