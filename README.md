@@ -1,4 +1,4 @@
-# README : HackingPinterest
+# README : BLOG PROJECT
 
 Bonjour! L'équipe est composée de Fred (FredS), Axel Pélerin et Juliette Audema. 
 
