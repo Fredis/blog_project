@@ -9,11 +9,5 @@
 require 'faker'
 
 10.times do |index|
-	category = Category.create!(name: Faker::Cannabis.category)
-end
-
-articles = Article.all[4..10]
-articles.each do |element|
-	element.category_id = 5
-	element.save
+	comment = Comment.create!(content: Faker::BojackHorseman.quote, user_id: 8, article_id: 8)
 end
