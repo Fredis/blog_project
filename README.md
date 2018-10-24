@@ -1,24 +1,20 @@
-# README
+Projet Blog_BDD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bonjour! L'équipe est composée de Fred (FredS), Axel Pélerin et Juliette Audema.
 
-Things you may want to cover:
+Il ne faut pas oublier de lancer un bundle install pour installer les gems.
 
-* Ruby version
+Les gem utilisées en plus de celles de rails:
+  
+  faker
 
-* System dependencies
+Le repositorie contient l'arborescence classique de Rails.
 
-* Configuration
+Ce qui a été fait: 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  -Nous avons crée différentes tables: users, articles, likes, category, comments;
+  -Nous avons établis des liens entre les tables:
+    -Un user peut avoir plusieurs articles, mais un article peut n'avoir qu'un user,
+    -Un article peut avoir plusieurs likes et comments, mais un like et un comment ne peuvent avoir qu'un user,
+    -Un article ne peut avoir qu'une category mais une category peut avoir plusieurs articles.
+    -Un user peut avoir plusieurs likes et comments, mais qu'un seul like par article.
